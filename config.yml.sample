@@ -1,0 +1,11 @@
+gateways:
+  poker:
+    username: poker_username
+    password: poker_password
+    host: http://poker.hostname
+
+  jira:
+    username: jira_username
+    password: jira_password
+    host: http://jira.hostname
+    issues_search_filter: 'status in (New, Reopened) AND category = Разработка ORDER BY updated ASC'
