@@ -12,7 +12,7 @@ module Mappers
           :name => issue[:fields][:summary],
           :type => issue[:fields][:issuetype][:name],
           :referenceId => issue[:key],
-          :link => jira_host << "/browse/#{issue[:key]}",
+          :link => "#{jira_host}/browse/#{issue[:key]}",
           :description => issue[:fields][:description],
           :acceptanceCriteria => ''
         }
