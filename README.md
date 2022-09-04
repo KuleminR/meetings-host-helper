@@ -14,5 +14,3 @@ Script should return a link to the battle
 # Coming soon...
 * set sp option - set storypoints to jira tickets and translate them to state from config
 * add diff - add missing tickets to created battle
-
-test
