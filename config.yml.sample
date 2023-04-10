@@ -8,4 +8,4 @@ gateways:
     username: jira_username
     password: jira_password
     host: http://jira.hostname
-    issues_search_filter: 'status in (New, Reopened) AND category = Разработка ORDER BY updated ASC'
+    issues_search_filter: 'status in (New, Reopened) AND category = Разработка OR project = Консультации AND status in ("Awaiting Standup") ORDER BY created ASC'
