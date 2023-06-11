@@ -30,6 +30,9 @@ module Gateways
       else
         make_response(auth_result)
       end
+
+    rescue RestClient::Exception => e
+      make_response(JSON.parse(e.response, {:symbolize_names => true}))
     end
 
     private
@@ -62,6 +65,7 @@ module Gateways
          '5',
          '8',
          '13'],
+       :pointAverageRounding => 'round',
        :autoFinishVoting => true,
        :plans => plans}.to_json
     end
